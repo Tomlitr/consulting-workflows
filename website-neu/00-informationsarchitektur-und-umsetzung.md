@@ -37,7 +37,7 @@ Kontakt. Kein „Training", kein „Kurse", kein „Shop", kein „Booking".
 | `/en/lessons/*` | „lesson" = Unterrichtseinheit | `/en/services/*` |
 | `/shop/*` | Leistung als Kaufartikel | `/kontakt/` (Anfrage → Angebot) |
 | `/en/booking/` | Buchung von Plätzen | `/en/contact/` (initial conversation) |
-| `online.tomklein.de` | Selbstlernangebot ist strukturell Lehre | Entscheidung erforderlich, siehe Abschnitt 6 |
+| `online.tomklein.de` | Selbstlernangebot ist strukturell Lehre | ✅ entschieden: ersatzlose Löschung (Abschnitt 6) |
 
 ## 3. Weiterleitungen (301)
 

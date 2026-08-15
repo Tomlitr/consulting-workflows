@@ -64,6 +64,16 @@ Optionen — mit der Rechtsberatung zu bewerten:
 3. bewusst weiterführen und über die **Schwerpunktbetrachtung** verteidigen — dann muss
    der Umsatzanteil klein und dokumentiert sein (siehe `05`).
 
+> **✅ Entschieden (15.08.2026):** Die Subdomain war **nie in produktiver Nutzung** und
+> wird **ersatzlos gelöscht**. Der Befund entfällt damit vollständig; mangels Nutzung und
+> Umsatz trägt das Angebot auch rückwirkend nichts zum Tätigkeitsschwerpunkt bei.
+> Abzuarbeiten:
+> - Dienst hinter der Subdomain kündigen bzw. abschalten (läuft auf AWS, getrennt vom
+>   Hauptserver)
+> - DNS-Eintrag `online` in der Domainverwaltung löschen
+> - Verweise auf die Subdomain entfernen: interne Links, Profile, Signaturen
+> - falls in der Google Search Console angemeldet: Property entfernen
+
 ### F-03 — Der Themenkatalog ist ein Curriculum generischen Wissens · **Risiko: hoch**
 
 Beobachtete Themen: *Organisationsentwicklung für die VUCA-Welt*, *Compassionate
