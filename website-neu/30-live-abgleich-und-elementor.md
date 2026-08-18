@@ -186,9 +186,91 @@ Investment, Vaillant, Vesta, Weber Hydraulik, Zotz-Klimas). Bewertung unverände
 S1-03: Stärke, unverändert übernehmen; Layoutdifferenz erledigt die
 Duplikat-Strategie.
 
-## 6. Offen — nächste Lieferungen
+## 6. Vollständiger Live-Abgleich per Direktzugriff (18.08.2026)
 
-Noch nicht gesehen und am kritischsten: die **Sektionen „Lösungen" und
-„Leistungen"** (dort saß bisher das Training-/Kurs-Vokabular), der **Hero-Claim**,
-Footer und die englische Fassung. Je Sektion wird hier ergänzt:
-Ist-Text → Bewertung → Neufassung.
+Ab hier gilt: Der REST-Zugriff auf die Site steht; die Befunde beruhen auf dem
+vollständigen gerenderten Live-One-Pager (DE und EN), nicht mehr auf Screenshots.
+
+### 6.1 Technische Befunde
+
+- **Der Live-One-Pager (id 15, als Startseite gesetzt) ist eine Elementor-Seite**
+  (764 Elementor-Marker im gerenderten HTML). Design und Bewegung liegen in
+  `_elementor_data`. Die Duplikat-Strategie aus Abschnitt 1 gilt unverändert.
+- **Der am 14.08. eingefügte Arbeitstext ist unsichtbar und harmlos.** Er wurde in
+  das WordPress-Inhaltsfeld (post_content) von id 15 eingefügt — ein Feld, das
+  Elementor beim Rendern ignoriert. Öffentlich war und ist er nie zu sehen
+  (verifiziert: kein „Lead", „Button:", „PRÜFEN" im gerenderten HTML). Revisionen
+  zeigen: Das Feld war vorher leer, nichts wurde überschrieben. **Aufräum-Empfehlung:**
+  post_content von id 15 und id 9856 bei Gelegenheit leeren, damit ein späterer
+  Theme-/Builder-Wechsel den Text nie rendert.
+- **Duplikat verifiziert:** id 9856 „Startseite" (Entwurf, angelegt per „Duplicate
+  Post") ist im Inhaltsfeld byte-identisch mit der Live-Seite; Duplicate Post kopiert
+  Metadaten (= Elementor-Daten) standardmäßig mit. Visuelle 10-Sekunden-Kontrolle im
+  Backend: id 9856 „Mit Elementor bearbeiten" öffnen → muss exakt wie die Live-Seite
+  aussehen.
+- **Die LMS-Schicht existiert nicht mehr.** Keine Kurs-Post-Types registriert (nur
+  Core + Elementor); `/kurse/…`, `/course/…`, `/courses/…`, `/training/`,
+  `/en/lessons/…`, `/shop/…`, `/en/booking/` liefern sämtlich **404**. Die
+  Strukturbefunde **F-01, F-04, F-11 sind gegenstandslos** (Vermerk in `02`).
+  Rest ist Suchmaschinen-Hygiene: veraltete Snippets sterben mit den 404ern aus;
+  optional Entfernung via Search Console beschleunigen.
+- **Seiteninventar (11 Seiten):** Live: Startseite (15), Home/EN (7661), Impressum,
+  Imprint, Privacy. Entwürfe: Duplikat (9856), Chat-Entwürfe „Startseite – Neufassung"
+  (9750, Elementor), `/beratung/` (9795), `/executive-coaching/` (9738) sowie AGB und
+  Terms (**auf Entwurf = derzeit offline — bewusst?**). Rolle der Chat-Entwürfe
+  klären: als Tiefen-Seiten gemäß Zielarchitektur weiterentwickeln oder verwerfen.
+- **`/en/` und `/home/` sind dieselbe, manuell gepflegte EN-Seite** (kein
+  Übersetzungs-Plugin). Konsequenz: **jede Korrektur zweisprachig ausführen** (6.3 + 6.4).
+- **Navigation:** „Lösungen" verlinkt schlicht auf die Startseite (kein Anker) — die
+  vermutete Doppelung mit „Leistungen" (→ `#leistungen`) ist keine; ggf. „Lösungen"
+  einen eigenen Anker geben. Der Anker `#über mich` enthält ein Leerzeichen → robuster:
+  `#ueber-mich`.
+
+### 6.2 Gesamtbefund in einer Zeile
+
+**Der Live-One-Pager ist zu ~95 % beratungssauber.** Die Tabs Projekte/Coaching/
+Kultur/Management, alle vier Leistungsblöcke (Strategie, Sense & Respond,
+Choreografie — „Am Ende sagen alle, wir haben es selbst gemeistert" —, Coaching als
+Reflexion) und beide Vitalitäts-Essays sind unbedenklich bis vorbildlich. Es bleiben
+chirurgische Eingriffe:
+
+### 6.3 Tauschtabelle DE (im Duplikat id 9856 ausführen)
+
+| # | Fundstelle | Ist (wörtlich) | Neu |
+|---|---|---|---|
+| D1 🔴 | Lösungen → Tab „Organisation", letzter Halbsatz | „…als Change Agents um, die durch Training und Coaching unterstützt werden." | „…als Change Agents um, die wir dabei im Prozess begleiten." |
+| D2 🔴 | Expertise, Punkt 2 | „Menschen und Teams dafür aufzustellen, ihren eigenen Lernweg gehen und meistern zu können" | „Menschen und Teams so aufzustellen, dass sie Veränderung aus eigener Kraft tragen und weiterentwickeln" |
+| D3 🔴 | Expertise, Punkt 3 | „Methoden und Tools für die offene, flexible und verantwortungsvolle Zusammenarbeit zu erklären und zu implementieren" | „Die Steuerungs- und Arbeitsformen für offene, flexible und verantwortungsvolle Zusammenarbeit auszuwählen und im Tagesgeschäft zu verankern" |
+| D4 🟡 | Expertise, Punkt 4 | „Die Grundlagen für eine lernende Organisation zu schaffen, inklusive Aufbau der internen Kapazitäten." | „Die Grundlagen dafür zu schaffen, dass sich die Organisation aus sich heraus weiterentwickelt — einschließlich der internen Strukturen und Verantwortlichkeiten." |
+| D5 🟡 | Essay „Vitalität in Menschen und Organisationen" | „…Schlüsselpersonen … die Möglichkeit zu geben, neues Wissen zu erwerben und sich in ihrer beruflichen Rolle zu reflektieren." | „…Schlüsselpersonen … die Möglichkeit zu geben, sich in ihrer beruflichen Rolle zu reflektieren und neue Perspektiven zu gewinnen." |
+| D6 🔴 | Testimonials (Reihenfolge + Auswahl) | Waldhier-Zitat: „…begeistert er … in seinen Trainings und Coachings…" | Zitate nie umformulieren. Reihenfolge: **Herrmann (KOSTAL) zuerst** („…statt auf Tools und Methoden"), dann Seehars (Grammer, „Sparringspartner"), dann Weiser-Walther; Waldhier-Zitat zurückstellen oder um ein aktualisiertes Zitat bitten. |
+| D7 | „Über Tom Klein", Grammatik | s. S2-02 | „…ungewöhnliche Lösungen verlangen — manchmal bis hin zu einem Wechsel der Art, wie Sie erfolgreich sind." · „…nehmen wir Ihre Führungskräfte und Ihre Mitarbeiter…" · „Unsere Kollegen bringen zusätzliche internationale Erfahrung ein." (die EN-Fassung ist hier die bessere Vorlage) |
+| D8 | CTA Erstgespräch | „…die Möglichkeit habe uns kennenzulernen…" | „…die Möglichkeit haben, uns kennenzulernen…" |
+| D9 🟡 | Social → YouTube | „Gezieltes Wissen rund um die Themen Transformation & Wandel." | „Impulse und Gespräche zu Transformation & Wandel." |
+| D10 🟡 | SEO-Titel der Seite | „Tom Klein – Organisationsentwicklung & Business Coaching" | „Tom Klein – Beratung für Business Transformation" |
+| D11 | Testimonial Seehars | harte Zeilenumbrüche mitten im Satz | als Fließtext setzen |
+| D12 | Footer | „© 2025" | „© 2026" |
+
+### 6.4 Tauschtabelle EN (`/en/` bzw. `/home/`, id 7661)
+
+| # | Fundstelle | Ist (wörtlich) | Neu |
+|---|---|---|---|
+| E1 🔴 | Organization-Tab | „…involving employees as change agents, supported by training and coaching." | „…involving employees as change agents, whom we support throughout the process." |
+| E2 🔴 | Expertise 2 | „Preparing individuals and teams to embark on and master their own learning paths." | „Preparing individuals and teams to drive change on their own — and to keep developing it." |
+| E3 🔴 | Expertise 3 | „Explaining and implementing methods and tools for open, flexible, and responsible collaboration." | „Selecting the ways of working and steering that open, flexible, responsible collaboration requires — and anchoring them in daily business." |
+| E4 🟡 | Expertise 4 | „Laying the foundations for a learning organization, including the development of internal capacities." | „Laying the foundations for an organization that keeps developing from within — including its internal structures and responsibilities." |
+| E5 🟡 | Essay (Vitality) | „…the opportunity to acquire the knowledge they need to reflect on their changing roles… giving teams the opportunity to learn through facilitated retrospectives." | „…the opportunity to reflect on their changing roles and gain new perspective… giving teams the opportunity to grow through facilitated retrospectives." |
+| E6 🔴 | Testimonial Waldhier (EN) | „…in his training and coaching sessions all over the world…" | wie D6: Reihenfolge ändern, Zitat zurückstellen/aktualisieren lassen |
+| E7 🟡 | Social → YouTube | „Targeted knowledge on the topics of transformation & change." | „Ideas and conversations on transformation & change." |
+| E8 | SEO-Titel EN | analog D10 prüfen | „Tom Klein – Business Transformation Consulting" |
+
+### 6.5 Reihenfolge der Anwendung
+
+1. Duplikat 9856 in Elementor öffnen (Sichtprüfung Design) → Tauschtabelle DE
+   ausführen (Weg A: Template-JSON-Export an Claude; Weg B: Handarbeit nach Tabelle).
+2. Sichtprüfung → Veröffentlichen (bzw. „Neu veröffentlichen" bei Rewrite & Republish).
+3. EN-Seite (7661) genauso — per Duplikat oder direkt.
+4. post_content-Reste in 15/9856 leeren.
+5. Search-Console-Hygiene für die toten Alt-URLs.
+6. Danach: Entscheidung über die Chat-Tiefenseiten (`/beratung/`, `/executive-coaching/`)
+   und die AGB-Entwürfe.

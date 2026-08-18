@@ -18,6 +18,14 @@ Was für den vollständigen Durchgang fehlt, steht am Ende unter „Offener Teil
 
 ## A. Strukturbefunde (gesichert)
 
+> **Live-Verifikation 18.08.2026 (Direktzugriff auf die Site):** Die Kurs-/LMS-Schicht
+> existiert nicht mehr — keine Kurs-Post-Types registriert, alle `/kurse/`-,
+> `/course/`-, `/courses/`-, `/training/`-, `/en/lessons/`-, `/shop/`- und
+> `/en/booking/`-URLs liefern 404. **F-01, F-04 und F-11 sind damit gegenstandslos**;
+> die ursprünglichen Suchmaschinen-Snippets beschrieben einen Altstand. F-05 ist durch
+> den tatsächlichen One-Pager weitgehend überholt (Beratungsstruktur vorhanden).
+> Verbleibende Text-Fixes am Live-Stand: `website-neu/30`, Abschnitte 6.3/6.4.
+
 ### F-01 — Die Seitenstruktur ist die eines Lernmanagementsystems · **Risiko: hoch**
 
 Beobachtet:
