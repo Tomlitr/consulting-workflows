@@ -219,8 +219,24 @@ vollständigen gerenderten Live-One-Pager (DE und EN), nicht mehr auf Screenshot
   (9750, Elementor), `/beratung/` (9795), `/executive-coaching/` (9738) sowie AGB und
   Terms (**auf Entwurf = derzeit offline — bewusst?**). Rolle der Chat-Entwürfe
   klären: als Tiefen-Seiten gemäß Zielarchitektur weiterentwickeln oder verwerfen.
-- **`/en/` und `/home/` sind dieselbe, manuell gepflegte EN-Seite** (kein
-  Übersetzungs-Plugin). Konsequenz: **jede Korrektur zweisprachig ausführen** (6.3 + 6.4).
+- **`/en/` wird von Polylang bedient** (Korrektur der ersten Einschätzung: Polylang
+  3.8.7 ist aktiv; `/home/` id 7661 ist die per Polylang verknüpfte EN-Übersetzung der
+  Startseite). Konsequenz unverändert: **jede Korrektur zweisprachig**; neue Seiten
+  brauchen Sprachzuordnung und Übersetzungs-Verknüpfung (steckt im Export-XML).
+- **Die Testimonials sind ein eigener Inhaltstyp** (Plugin „Strong Testimonials"),
+  nicht in den Elementor-Daten. D6 (Reihenfolge/Zurückstellen) und D11 (harte
+  Zeilenumbrüche) laufen also **ohne Elementor**: über die Testimonial-Verwaltung in
+  wp-admin bzw. per XML-RPC (auf dem Server erreichbar, Status 200 — Statusänderung
+  und Reihenfolge sind normale Beitragsfelder).
+- **Werkzeug-Inventar (18.08.):** Elementor 4.2.2 (ohne Pro), Yoast SEO 28.3
+  (steuert die Titel — D10/E8 als Yoast-Feld je Seite), Polylang, Strong
+  Testimonials, Yoast Duplicate Post, Contact Form 7 + hCaptcha, Borlabs Cookie,
+  Wordfence + Kadence Security, UpdraftPlus (Backups — vor Go-Live ein manuelles
+  Backup auslösen), Matomo, Code Snippets. **WordPress Importer 0.9.5 wurde per REST
+  installiert und aktiviert** (für den Import-Weg in 6.5).
+- **Aufräumen erledigt (18.08.):** post_content von id 15 und id 9856 per REST
+  geleert; Live-Ausspielung verifiziert unverändert (Marker + Titel identisch).
+  Der Alt-Text liegt nur noch in den Revisionen.
 - **Navigation:** „Lösungen" verlinkt schlicht auf die Startseite (kein Anker) — die
   vermutete Doppelung mit „Leistungen" (→ `#leistungen`) ist keine; ggf. „Lösungen"
   einen eigenen Anker geben. Der Anker `#über mich` enthält ein Leerzeichen → robuster:
