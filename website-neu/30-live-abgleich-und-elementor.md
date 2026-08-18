@@ -290,3 +290,34 @@ chirurgische Eingriffe:
 5. Search-Console-Hygiene für die toten Alt-URLs.
 6. Danach: Entscheidung über die Chat-Tiefenseiten (`/beratung/`, `/executive-coaching/`)
    und die AGB-Entwürfe.
+
+## 7. Umsetzungsstand (18.08.2026, spät)
+
+**DE-Korrektur auf dem Duplikat ist ausgeführt und verifiziert.** Alle Swaps D1–D9
+plus Yoast-Titel (D10) sind serverseitig in Entwurf id 9856 geschrieben; die
+gerenderte Seite wurde temporär veröffentlicht, programmatisch geprüft (10/10 neue
+Texte vorhanden, 8/8 Alt-Formulierungen entfernt, alle Sektionen intakt) und wieder
+auf Entwurf gestellt (Slug `startseite-entwurf-drv`). Live-Seite id 15 unverändert.
+
+**Funktionierendes Verfahren** (für die Live-Anwendung wiederverwenden):
+Code-Snippets-REST → Snippet anlegen (inaktiv) → per Update aktivieren →
+Frontend-Request als Trigger → Beacon über post_excerpt auslesen → Snippet löschen.
+Wirksame Schreibsequenz: `update_post_meta(_elementor_data, wp_slash($json))` +
+`delete_post_meta(_elementor_element_cache)` + `delete_post_meta(_elementor_css)`.
+Stolpersteine, dokumentiert für die Wiederholung: Single-Use-Scope führt über die
+REST-Aktivierung nicht aus; `active:true` beim Anlegen wird ignoriert (separater
+Aktivierungs-Call nötig); `\Elementor\Plugin::…->clear_cache()` bricht ab —
+stattdessen die beiden Meta-Deletes; App-Passwort-Auth greift erst nach
+`parse_request`, `init`-Hooks auf REST-Requests laufen anonym; der
+REST-Delete des Plugins löscht nicht zuverlässig — Aufräumen via
+`DELETE FROM wp_snippets WHERE name LIKE '[Claude]%'` im letzten Snippet.
+Alle Hilfs-Snippets, Option-Flags und Excerpt-Beacons sind restlos entfernt.
+
+**Rollback-Archiv:** `website-neu/elementor/` enthält Original- und korrigierte
+Payloads (de/en) sowie den Swap-Report. Wiederherstellung = Original-JSON mit
+derselben Schreibsequenz zurückschreiben.
+
+**Offen:** Sichtfreigabe des Entwurfs durch Tom → dann gleiche Sequenz auf Live
+id 15 · EN id 7661 (en-fixed.json liegt bereit) · Testimonials D6/D11 (CPT
+`testimonials`: Datumsreihenfolge + Waldhier auf Entwurf; Seehars-Umbrüche) ·
+D12 Fußzeile (Quelle noch zu lokalisieren) · Search-Console-Hygiene.
