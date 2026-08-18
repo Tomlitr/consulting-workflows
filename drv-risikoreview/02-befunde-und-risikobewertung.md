@@ -64,7 +64,7 @@ Optionen — mit der Rechtsberatung zu bewerten:
 3. bewusst weiterführen und über die **Schwerpunktbetrachtung** verteidigen — dann muss
    der Umsatzanteil klein und dokumentiert sein (siehe `05`).
 
-> **✅ Entschieden (15.08.2026):** Die Subdomain war **nie in produktiver Nutzung** und
+> **✅ Entschieden (18.08.2026):** Die Subdomain war **nie in produktiver Nutzung** und
 > wird **ersatzlos gelöscht**. Der Befund entfällt damit vollständig; mangels Nutzung und
 > Umsatz trägt das Angebot auch rückwirkend nichts zum Tätigkeitsschwerpunkt bei.
 > Abzuarbeiten:
