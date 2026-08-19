@@ -321,3 +321,23 @@ derselben Schreibsequenz zurückschreiben.
 id 15 · EN id 7661 (en-fixed.json liegt bereit) · Testimonials D6/D11 (CPT
 `testimonials`: Datumsreihenfolge + Waldhier auf Entwurf; Seehars-Umbrüche) ·
 D12 Fußzeile (Quelle noch zu lokalisieren) · Search-Console-Hygiene.
+
+## 8. Neufassungs-Umbau auf dem Duplikat (19.08.2026)
+
+Freigaben: die vier Leistungstexte entfallen, die Zeile „Am Ende sagen alle, wir
+haben es selbst gemeistert." wird in Schritt 4 des Prozesses gerettet; neues
+Hero-Overlay (DE) von Tom geliefert; EN später als eigenständige native Fassung,
+nicht als Übersetzung.
+
+**Batch A ausgeführt und verifiziert (15/15):** Hero-Overlay (Kicker „Beratung für
+Business Transformation", H „Transformation in die Hand nehmen.", Tempo-Lead) ·
+Sektion 2 = Vitalität („Ein Handlungsaufruf zur Transformation.", 5 Absätze) ·
+neue Zwischenüberschrift „Einstiege in die Transformation" · alle 5 Tab-Texte auf
+Neufassung („Strategieklausuren", „…die ich während des Vorhabens an ihren
+konkreten Aufgaben begleite"). D-Fixes intakt, alle Bestandssektionen intakt.
+Payload: `elementor/de-batchA.json` (17 Top-Sektionen).
+
+Offen: Batch B (Ausgangslagen · 4-Schritte-Prozess inkl. gerettete Zeile ·
+Executive-Coaching-Sektion) · Batch C (Mandate · „Was ich nicht anbiete" ·
+Vitalität-2-Tausch · Aufräumen ersetzter Sektionen · Testimonial-Reihenfolge/D11 ·
+Snippet-Reste purgen).
