@@ -182,7 +182,7 @@ Sektion (#1B5F71) statt Accordion, Eyebrow „EIN AUFRUF AN ENTSCHEIDUNGSTRÄGER
 H2 weiß mit Serif-em, helle Trennlinie, **aktueller Text der Neufassung** („Sie
 haben so ein Unternehmen schon erlebt…", 6 Absätze).
 
-**Quellen-Klärung:** Die Neufassung 9750 trägt in post_content einen aktNo—
+**Quellen-Klärung:** Die Neufassung 9750 trägt in post_content einen
 aktuelleren Text als in _elementor_data des Exports; Referenz ab jetzt =
 **gerenderte Seite** (blob-v3, per Kurz-Publish gezogen). ⚠️ Der Screenshot-Satz
 „Und zunehmend KI-gestützte Entscheidungsprozesse…" steht in KEINER gespeicherten
