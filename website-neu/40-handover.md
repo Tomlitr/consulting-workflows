@@ -168,3 +168,27 @@ Verifiziert 11/11 im Render; Helper gepurgt. Payload-Kette endet jetzt bei
 Offen: Toms Sichtprüfung Batch D · Tiefen-Seiten /beratung/ + /executive-coaching/
 (DRV-Check, fertigstellen, publizieren) · Nav-Unterpunkte unter „Leistungen" ·
 EN nativ · Go-Live DE.
+
+## Update 19.08. spät — Batch E: Wann-Visuals, Mandate-Box + Umzug, Vital2 flach
+
+Auf Toms Feedback (Prozess-Sektion freigegeben): **Wann-Sektion** jetzt wie in der
+Neufassung — H2 mit Serif-em („…mich *beauftragen.*"), Trennlinie, 2×2-Zellen mit
+großen quadratischen Bildern, darunter fette teal H3 + Text · **Mandate-Sektion**
+formatiert (Serif-em „…in der *Praxis.*", Trennlinie, Rahmen-Box 1px #D6D8D6 mit
+Playfair-h3 + dt/dd-Stil #64A6AF, Projektwand-Bild darunter, gerettete Zeile wieder
+im Ergebnis) und **zwischen Executive Coaching und Tom Klein & Co. verschoben**
+(alternierende Hell/Dunkel-Panes) · **Vitalität-2 neu gebaut**: flache dunkle
+Sektion (#1B5F71) statt Accordion, Eyebrow „EIN AUFRUF AN ENTSCHEIDUNGSTRÄGER",
+H2 weiß mit Serif-em, helle Trennlinie, **aktueller Text der Neufassung** („Sie
+haben so ein Unternehmen schon erlebt…", 6 Absätze).
+
+**Quellen-Klärung:** Die Neufassung 9750 trägt in post_content einen aktNo—
+aktuelleren Text als in _elementor_data des Exports; Referenz ab jetzt =
+**gerenderte Seite** (blob-v3, per Kurz-Publish gezogen). ⚠️ Der Screenshot-Satz
+„Und zunehmend KI-gestützte Entscheidungsprozesse…" steht in KEINER gespeicherten
+Fassung — vermutlich ungesicherter Editor-Stand; ebenso weichen Schritt-/Exec-Texte
+im Screenshot leicht ab. Toms installierte (freigegebene) Fassungen bleiben, bis er
+den neuen Wortlaut liefert oder speichert.
+
+Verifiziert 17/17; Helfer gepurgt. **Aktueller Stand 9856 = de-batchE.json**
+(20 Top-Sektionen). Offen: Sichtprüfung E · Tiefen-Seiten + Nav · EN · Go-Live.
