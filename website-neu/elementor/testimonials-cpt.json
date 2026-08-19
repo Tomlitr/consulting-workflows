@@ -1,0 +1,146 @@
+[
+ {
+  "id": "5740",
+  "title": "Dr. Thomas Waldhier DE",
+  "status": "publish",
+  "date": "2024-01-30 22:15:15",
+  "menu_order": "0",
+  "categories": [
+   [
+    "testimonials-category",
+    "DE"
+   ]
+  ],
+  "content": "",
+  "meta": {
+   "qodef_testimonials_author": "Dr. Thomas Waldhier",
+   "qodef_testimonials_author_job": "CEO Eberspächer Exhaust Technology GmbH"
+  }
+ },
+ {
+  "id": "5744",
+  "title": "Thorsten Seehars DE",
+  "status": "publish",
+  "date": "2024-01-30 22:17:04",
+  "menu_order": "0",
+  "categories": [
+   [
+    "testimonials-category",
+    "DE"
+   ]
+  ],
+  "content": "",
+  "meta": {
+   "qodef_testimonials_author": "Thorsten Seehars",
+   "qodef_testimonials_author_job": "Position CEO Grammer AG"
+  }
+ },
+ {
+  "id": "6235",
+  "title": "Hansjörg Herrmann DE",
+  "status": "publish",
+  "date": "2024-02-28 07:48:42",
+  "menu_order": "0",
+  "categories": [
+   [
+    "testimonials-category",
+    "DE"
+   ]
+  ],
+  "content": "",
+  "meta": {
+   "qodef_testimonials_author": "Hansjörg Herrmann",
+   "qodef_testimonials_author_job": "KOSTAL"
+  }
+ },
+ {
+  "id": "7855",
+  "title": "Hansjörg Herrmann EN",
+  "status": "publish",
+  "date": "2024-03-30 20:12:24",
+  "menu_order": "0",
+  "categories": [
+   [
+    "testimonials-category",
+    "EN"
+   ]
+  ],
+  "content": "",
+  "meta": {
+   "qodef_testimonials_author": "Hansjörg Herrmann",
+   "qodef_testimonials_author_job": "KOSTAL"
+  }
+ },
+ {
+  "id": "7858",
+  "title": "Thorsten Seehars EN",
+  "status": "publish",
+  "date": "2024-03-30 20:15:29",
+  "menu_order": "0",
+  "categories": [
+   [
+    "testimonials-category",
+    "EN"
+   ]
+  ],
+  "content": "",
+  "meta": {
+   "qodef_testimonials_author": "Thorsten Seehars",
+   "qodef_testimonials_author_job": "Position CEO Grammer AG"
+  }
+ },
+ {
+  "id": "7866",
+  "title": "Dr. Thomas Waldhier  EN",
+  "status": "publish",
+  "date": "2024-03-30 20:18:49",
+  "menu_order": "0",
+  "categories": [
+   [
+    "testimonials-category",
+    "EN"
+   ]
+  ],
+  "content": "",
+  "meta": {
+   "qodef_testimonials_author": "Dr. Thomas Waldhier",
+   "qodef_testimonials_author_job": "CEO Eberspächer Exhaust Technology GmbH"
+  }
+ },
+ {
+  "id": "8918",
+  "title": "Silke Weiser-Walther",
+  "status": "publish",
+  "date": "2024-08-15 21:30:17",
+  "menu_order": "0",
+  "categories": [
+   [
+    "testimonials-category",
+    "DE"
+   ]
+  ],
+  "content": "",
+  "meta": {
+   "qodef_testimonials_author": "Silke Weiser-Walther",
+   "qodef_testimonials_author_job": "COO und Managing Partner bei Quoniam Asset Management GmbH"
+  }
+ },
+ {
+  "id": "8922",
+  "title": "Silke Weiser-Walther",
+  "status": "publish",
+  "date": "2024-08-15 21:32:17",
+  "menu_order": "0",
+  "categories": [
+   [
+    "testimonials-category",
+    "EN"
+   ]
+  ],
+  "content": "",
+  "meta": {
+   "qodef_testimonials_author": "Silke Weiser-Walther",
+   "qodef_testimonials_author_job": "COO und Managing Partner bei Quoniam Asset Management GmbH"
+  }
+ }
+]
