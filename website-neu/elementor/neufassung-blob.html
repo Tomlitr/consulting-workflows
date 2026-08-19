@@ -1,0 +1,190 @@
+<p><style>
+.tkn{font-family:'Poppins',sans-serif;font-weight:200;color:#1F2A2D;background:#fff;font-size:17px;line-height:1.75}<br />
+.tkn *{box-sizing:border-box}<br />
+.tkn ::selection{background:#F6CD3F;color:#1F2A2D}<br />
+.tkn section{padding:96px 0;margin:0}<br />
+.tkn .wrap{max-width:1080px;margin:0 auto;padding:0 40px}<br />
+@media(max-width:700px){.tkn section{padding:64px 0}.tkn .wrap{padding:0 22px}}<br />
+.tkn .eyebrow{font-weight:700;font-size:11px;letter-spacing:.5em;text-transform:uppercase;color:#1B5F71;margin:0 0 22px}<br />
+.tkn .eyebrow.hell{color:#64A6AF}<br />
+.tkn h1,.tkn h2{font-family:'Poppins',sans-serif;font-weight:200;color:#1B5F71;line-height:1.2;margin:0}<br />
+.tkn h1{font-size:clamp(34px,5.4vw,58px)}<br />
+.tkn h2{font-size:clamp(27px,3.6vw,40px);margin-bottom:18px}<br />
+.tkn h1 em,.tkn h2 em,.tkn .lead-quote em{font-family:'Playfair Display',serif;font-style:italic;font-weight:400}<br />
+.tkn .intro{max-width:720px;font-size:17.5px;margin-top:20px}<br />
+.tkn hr.rule{border:0;border-top:1px solid #D6D8D6;margin:38px 0 44px}<br />
+.tkn .lead-quote{font-family:'Playfair Display',serif;font-style:italic;font-size:21px;color:#1B5F71}<br />
+.tkn p{margin:0}.tkn p+p{margin-top:1em}<br />
+.tkn .btn{display:inline-block;margin-top:34px;padding:13px 30px;border:1px solid #1B5F71;color:#1B5F71;text-decoration:none;font-weight:600;font-size:12px;letter-spacing:.22em;text-transform:uppercase;transition:background .2s,color .2s;background:none;cursor:pointer}<br />
+.tkn .btn:hover{background:#1B5F71;color:#fff}<br />
+.tkn .btn.invert{border-color:#fff;color:#fff}<br />
+.tkn .btn.invert:hover{background:#fff;color:#1B5F71}<br />
+.tkn .hero{position:relative;overflow:hidden;padding:150px 0 130px;color:#fff}<br />
+.tkn .hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}<br />
+.tkn .hero .overlay{position:absolute;inset:0;background:rgba(27,95,113,.72);z-index:1}<br />
+.tkn .hero .wrap{position:relative;z-index:2}<br />
+.tkn .hero h1{color:#fff}<br />
+.tkn .hero .eyebrow{color:#64A6AF}<br />
+.tkn .hero .lead{max-width:760px;font-size:19px;margin-top:26px;color:#fff}<br />
+.tkn .tabbar{display:flex;flex-wrap:wrap;gap:0 34px;border-bottom:1px solid #D6D8D6;margin-top:8px}<br />
+.tkn .tabbar button{background:none;border:0;cursor:pointer;padding:14px 2px;font-family:'Poppins',sans-serif;font-weight:600;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#6B7A7E;border-bottom:2px solid transparent;margin-bottom:-1px}<br />
+.tkn .tabbar button[aria-selected="true"]{color:#1B5F71;border-bottom-color:#1B5F71}<br />
+.tkn .tabpanel{display:none;padding-top:46px}<br />
+.tkn .tabpanel.active{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}<br />
+.tkn .tabpanel img{width:100%;max-width:380px;justify-self:center;height:auto}<br />
+.tkn .tabpanel h3{font-weight:200;font-size:24px;color:#1B5F71;margin:0 0 14px}<br />
+.tkn .tabpanel h3 em{font-family:'Playfair Display',serif;font-weight:400}<br />
+@media(max-width:820px){.tkn .tabpanel.active{grid-template-columns:1fr;gap:30px}}<br />
+.tkn .grid2{display:grid;grid-template-columns:1fr 1fr;gap:54px 64px}<br />
+@media(max-width:820px){.tkn .grid2{grid-template-columns:1fr;gap:40px}}<br />
+.tkn .lage h3{font-weight:700;font-size:15px;color:#1B5F71;margin:0 0 10px;line-height:1.5}<br />
+.tkn .lage p{font-size:16px}<br />
+.tkn .split{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}<br />
+@media(max-width:820px){.tkn .split{grid-template-columns:1fr;gap:36px}}<br />
+.tkn .split img{width:100%;height:auto;display:block}<br />
+.tkn ul.exp{margin:10px 0 0;padding:0}<br />
+.tkn .exp li{list-style:none;padding:16px 0;border-bottom:1px solid #D6D8D6;font-size:16px}<br />
+.tkn .exp li:before{content:"\2013\00a0\00a0";color:#64A6AF}<br />
+.tkn .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:44px}<br />
+@media(max-width:980px){.tkn .steps{grid-template-columns:1fr 1fr}}<br />
+@media(max-width:620px){.tkn .steps{grid-template-columns:1fr}}<br />
+.tkn .step .num{font-family:'Playfair Display',serif;font-style:italic;font-size:52px;color:#64A6AF;line-height:1}<br />
+.tkn .step h3{font-weight:700;font-size:14px;letter-spacing:.06em;color:#1B5F71;margin:16px 0 10px;text-transform:uppercase}<br />
+.tkn .step p{font-size:15px}<br />
+.tkn .dark{background:#1B5F71;color:#fff}<br />
+.tkn .dark .eyebrow{color:#64A6AF}<br />
+.tkn .dark p,.tkn .dark .lead-quote{color:#fff}<br />
+.tkn .dark .lead-quote{font-size:clamp(22px,3vw,30px);line-height:1.5}<br />
+.tkn .vital p{max-width:780px}<br />
+.tkn .vital .lead-quote{display:block;margin:26px 0;max-width:700px}<br />
+.tkn .mandat{border:1px solid #D6D8D6;padding:40px 44px;margin-top:8px}<br />
+.tkn .mandat h3{font-family:'Playfair Display',serif;font-style:italic;font-weight:400;font-size:22px;color:#1B5F71;margin:0 0 20px}<br />
+.tkn .mandat dt{font-weight:700;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:#64A6AF;margin-top:18px}<br />
+.tkn .mandat dd{font-size:15.5px;margin:4px 0 0}<br />
+.tkn .tst{display:grid;grid-template-columns:repeat(3,1fr);gap:54px}<br />
+@media(max-width:980px){.tkn .tst{grid-template-columns:1fr}}<br />
+.tkn .tst blockquote{font-family:'Playfair Display',serif;font-style:italic;font-size:16.5px;line-height:1.8;margin:0;padding:0;border:0;background:none}<br />
+.tkn .tst .who{display:flex;align-items:center;gap:14px;margin-top:22px}<br />
+.tkn .tst .who img{width:52px;height:52px;border-radius:50%;object-fit:cover}<br />
+.tkn .tst .who b{display:block;font-weight:700;font-size:13px;color:#1B5F71}<br />
+.tkn .tst .who span{font-size:12.5px;color:#6B7A7E}<br />
+.tkn .logos{columns:4;column-gap:40px;font-size:14px;color:#6B7A7E;line-height:2.3}<br />
+@media(max-width:820px){.tkn .logos{columns:2}}<br />
+.tkn .label{display:inline-block;font-weight:700;font-size:11px;letter-spacing:.4em;text-transform:uppercase;color:#1B5F71;border-bottom:1.5px solid #F6CD3F;padding-bottom:6px;margin-bottom:26px}<br />
+.tkn .ksteps{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin:44px 0 54px}<br />
+@media(max-width:820px){.tkn .ksteps{grid-template-columns:1fr}}<br />
+.tkn .ksteps .num{font-family:'Playfair Display',serif;font-style:italic;font-size:34px;color:#64A6AF}<br />
+.tkn .ksteps h3{font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#1B5F71;margin:10px 0 6px}<br />
+.tkn .ksteps p{font-size:15px}<br />
+.tkn .cf7wrap{max-width:640px}<br />
+.tkn .note{max-width:760px;border:1px dashed #64A6AF;padding:14px 18px;margin-top:30px;font-size:13px;color:#6B7A7E}<br />
+.tkn .note b{color:#1B5F71;font-weight:700;font-size:11px;letter-spacing:.25em;text-transform:uppercase}<br />
+.tkn .soft{background:#FAFBFB}</p>
+<p>/* --- Revision 2: Hero nativ, Panes, Slider, Kundengrid, Socials --- */<br />
+.tkn .hero{position:relative;min-height:74vh;display:flex;align-items:center;padding:0;color:#fff}<br />
+.tkn .heropanel{position:relative;z-index:2;max-width:580px;background:rgba(35,41,43,.55);<br />
+  -webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);padding:46px 50px;<br />
+  margin:110px 40px 110px max(40px, calc((100vw - 1080px)/2 + 40px))}<br />
+.tkn .heropanel .eyebrow{color:#64A6AF}<br />
+.tkn .heropanel h1{color:#fff}<br />
+.tkn .heropanel .lead{color:#fff;font-size:18px;margin-top:22px}<br />
+@media(max-width:700px){.tkn .heropanel{margin:90px 0 0;max-width:none;padding:34px 24px;background:rgba(35,41,43,.65)}}<br />
+.tkn .pane{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center;margin-top:74px}<br />
+.tkn .pane:first-of-type{margin-top:0}<br />
+.tkn .pane.rev .ptext{order:2}<br />
+.tkn .pane.rev .pimg{order:1}<br />
+@media(max-width:820px){.tkn .pane{grid-template-columns:1fr;gap:26px}.tkn .pane.rev .ptext,.tkn .pane.rev .pimg{order:0}}<br />
+.tkn .pane .num{font-family:'Playfair Display',serif;font-style:italic;font-size:52px;color:#64A6AF;line-height:1}<br />
+.tkn .pane h3{font-weight:200;font-size:24px;color:#1B5F71;margin:14px 0 12px}<br />
+.tkn .pane p{font-size:15.5px}<br />
+.tkn .ph{aspect-ratio:1/1;max-width:380px;width:100%;justify-self:center;border:1px dashed #64A6AF;<br />
+  display:flex;align-items:center;justify-content:center;text-align:center;<br />
+  color:#6B7A7E;font-size:11px;letter-spacing:.25em;text-transform:uppercase;background:#fff;padding:20px}<br />
+.tkn .slider{position:relative;max-width:780px;margin:0 auto;text-align:center;padding:0 64px}<br />
+@media(max-width:620px){.tkn .slider{padding:0 8px}}<br />
+.tkn .slide{display:none}<br />
+.tkn .slide.on{display:block}<br />
+.tkn .slide blockquote{font-size:18px}<br />
+.tkn .slide .who{justify-content:center}<br />
+.tkn .snav{position:absolute;top:38%;width:42px;height:42px;background:none;border:1px solid #D6D8D6;<br />
+  color:#1B5F71;cursor:pointer;font-size:16px;line-height:1}<br />
+.tkn .snav:hover{border-color:#1B5F71}<br />
+.tkn .snav.prev{left:0}.tkn .snav.next{right:0}<br />
+@media(max-width:620px){.tkn .snav{display:none}}<br />
+.tkn .dots{margin-top:28px;display:flex;gap:9px;justify-content:center}<br />
+.tkn .dot{width:8px;height:8px;border-radius:50%;border:0;background:#D6D8D6;cursor:pointer;padding:0}<br />
+.tkn .dot.on{background:#1B5F71}<br />
+.tkn .kunden{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));<br />
+  gap:30px 18px;text-align:center;font-size:14.5px;color:#6B7A7E;align-items:center;line-height:1.4}<br />
+.tkn .soc{display:grid;grid-template-columns:repeat(3,1fr);gap:44px}<br />
+@media(max-width:820px){.tkn .soc{grid-template-columns:1fr}}<br />
+.tkn .soc a.img{display:block}<br />
+.tkn .soc img{width:100%;height:auto;display:block}<br />
+.tkn .soc h3{font-weight:700;font-size:14px;color:#1B5F71;margin:16px 0 8px}<br />
+.tkn .soc p{font-size:14.5px}</p>
+<p>.tkn .pimg .pfoto{width:100%;max-width:400px;height:auto;justify-self:center;display:block}<br />
+.tkn .lage img{width:100%;height:auto;display:block;margin-bottom:18px}<br />
+.tkn .dark .split{align-items:center}<br />
+.tkn .dark .split img{width:100%;height:auto;display:block}<br />
+.tkn .msplit{display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:start}<br />
+@media(max-width:820px){.tkn .msplit{grid-template-columns:1fr}}<br />
+.tkn .msplit img{width:100%;height:auto;display:block}</p>
+<p>/* Revision 3 */<br />
+.tkn .tabpanel h3 em{font-weight:700}<br />
+.tkn .tabpanel img{max-width:460px}<br />
+.tkn .tabpanel p,.tkn .pane p,.tkn .dark p,.tkn .aufruf p{hyphens:auto;-webkit-hyphens:auto;text-wrap:pretty}<br />
+.tkn .pane{grid-template-columns:1fr 1fr}<br />
+.tkn .pane .ptext{max-width:52ch}<br />
+.tkn .pimg .pfoto{max-width:440px}<br />
+.tkn .dark .split{grid-template-columns:1.2fr .8fr}<br />
+.tkn .dark .lead-quote{text-wrap:balance}<br />
+.tkn .plainh{font-weight:200;font-size:clamp(26px,3.4vw,38px);color:#1B5F71;margin-bottom:18px}<br />
+.tkn .stars{color:#F6CD3F;letter-spacing:5px;font-size:15px;margin-top:20px}<br />
+.tkn .slide .name{margin-top:14px;font-weight:700;font-size:13px;color:#1B5F71}<br />
+.tkn .slide .name span{display:block;font-weight:200;font-size:12.5px;color:#6B7A7E}<br />
+.tkn .kunden{text-align:left;color:#1F2A2D;font-size:15.5px;font-weight:200}<br />
+.tkn .qbtn{display:inline-block;margin-top:26px;color:#1B5F71;text-decoration:none;<br />
+  font-weight:600;font-size:12px;letter-spacing:.22em;text-transform:uppercase}<br />
+.tkn .qbtn .arr{display:inline-block;margin-left:10px;transition:transform .2s}<br />
+.tkn .qbtn:hover .arr{transform:translateX(6px)}<br />
+.tkn .soc .img{aspect-ratio:1270/890;overflow:hidden;display:block}<br />
+.tkn .soc img{width:100%;height:100%;object-fit:cover}<br />
+.tkn .aufruf .split{grid-template-columns:1.15fr .85fr;align-items:center}</p>
+<p>/* Revision 4 */<br />
+.tkn .hero{display:block;min-height:0;padding:0;color:inherit;position:static}<br />
+.tkn .hero video{position:static;width:100%;height:auto;display:block;object-fit:contain;filter:none}<br />
+.tkn .herotext{padding-top:72px}<br />
+.tkn .herotext h1{color:#1B5F71}<br />
+.tkn .herotext .eyebrow{color:#1B5F71}<br />
+.tkn .pane .ptext{max-width:none}<br />
+.tkn .pimg .pfoto{max-width:none;width:100%}<br />
+.tkn .aufruf .split img{width:100%;height:auto;display:block}</p>
+</style></p><div class="tkn"><section id="start" class="hero"><video src="https://www.tomklein.de/wp-content/uploads/2026/07/video-above-the-fold.mp4" autoplay="autoplay" loop="loop" muted="" width="300" height="150"></video><div class="wrap herotext"><p class="eyebrow">Beratung für Business Transformation</p><h1>Transformation in die Hand <em>nehmen.</em></h1><p class="lead intro">Ich berate Unternehmen in Veränderungsvorhaben: Analyse der Ausgangslage,<br />Entwicklung des Zielbildes, Begleitung der Umsetzung bis zur Wirksamkeit im Tagesgeschäft.<br />Auf oberer Führungsebene arbeite ich als Sparringspartner in Entscheidungs- und<br />Reflexionsprozessen.</p><p><a class="btn" href="#kontakt">Erstgespräch vereinbaren</a></p></div></section><section id="aufruf" class="vital aufruf soft"><div class="wrap"><p class="eyebrow hell">Vitalität in Menschen und Organisationen</p><h2>Ein Handlungsaufruf zur <em>Transformation.</em></h2><hr class="rule" /><div class="split"><div><p>Stellen Sie sich eine Organisation vor, die ihre Kraft nicht aus Druck bezieht, sondern<br />aus Lebendigkeit. Menschen übernehmen Verantwortung, nicht weil eine Regel es verlangt,<br />sondern weil sie an dem beteiligt sind, was entsteht. Ideen erreichen die Stellen, an denen<br />entschieden wird. Und Entscheidungen erreichen die Menschen, die sie tragen sollen.</p><p>Die meisten Organisationen arbeiten weit unter diesem Möglichen. Nicht aus Mangel an<br />Talent, sondern weil sich Menschen an enge Erwartungen und starre Strukturen angepasst<br />haben. Wer über Jahre erfahren hat, dass Initiative riskant ist, bringt nur noch einen<br />Bruchteil seiner Energie ein.</p><p><span class="lead-quote">Der Schlüssel liegt in der Investition in Selbstreflexion: in<br />Menschen, die ihre Rolle neu greifen, und in Teams, die an ihrer eigenen Zusammenarbeit<br />arbeiten.</span></p><p>Das bedeutet, Schlüsselpersonen Raum zu geben, in ihrer veränderten Rolle<br />Sicherheit zu gewinnen. Teams in moderierten Retrospektiven an der eigenen Zusammenarbeit<br />arbeiten zu lassen. Und mit Führungsteams in regelmäßigen Klausuren nicht nur<br />in der Organisation zu arbeiten, sondern an ihr.</p><p>Vitalität ist kein weiches Ziel. Sie zeigt sich hart im Geschäft: in<br />Entscheidungen, die fallen, statt zu kreisen. In Zusagen, die halten. In einer Organisation,<br />die Veränderung nicht erleidet, sondern führt. Dahin gibt es einen Weg, und er<br />beginnt mit dem Entschluss, ihn zu gehen.</p></div><div class="pimg"><img style="width: 100%; height: auto; display: block;" src="https://www.tomklein.de/wp-content/uploads/2026/08/handlungsaufruf-transformation.webp" alt="Lebendigkeit in der Organisation: Baum im Atrium" /></div></div></div></section><section id="beratung" style="padding-top: 70px;"><div class="wrap"><p class="eyebrow hell">Einstiege in die Transformation</p><div class="tabbar" role="tablist"><button id="tkn-b1" role="tab" aria-selected="true" aria-controls="tkn-t1">Organisation</button><br /><button id="tkn-b2" role="tab" aria-selected="false" aria-controls="tkn-t2">Projekte</button><br /><button id="tkn-b3" role="tab" aria-selected="false" aria-controls="tkn-t3">Coaching</button><br /><button id="tkn-b4" role="tab" aria-selected="false" aria-controls="tkn-t4">Kultur</button><br /><button id="tkn-b5" role="tab" aria-selected="false" aria-controls="tkn-t5">Management</button></div><div id="tkn-t1" class="tabpanel active" role="tabpanel"><div><h3>Organi<em>sation</em></h3><p>Strategieklausuren mit dem Management Team richten den Blick auf die Zukunft und<br />identifizieren Hindernisse in der Organisationsstruktur. Organisationsanpassungen setzt die<br />Firma durch Beteiligung von Mitarbeitern als Change Agents um, die ich während des<br />Vorhabens an ihren konkreten Aufgaben begleite.</p></div><p><img src="https://www.tomklein.de/wp-content/uploads/2024/04/Organisation-%E2%80%93-1.png" alt="Organisation" /></p></div><div id="tkn-t2" class="tabpanel" role="tabpanel"><div><h3>Pro<em>jekte</em></h3><p>Ein Konfliktklärungsworkshop weist auf ein Problem im Projektmanagement hin.<br />Abhängigkeiten werden über Visualisierungsmethoden sichtbar gemacht, sodass alle<br />Beteiligten dasselbe Bild vor sich haben. Über die Moderation von Planungs- und<br />Reviewmeetings gelingt es, die Abhängigkeiten zu managen und Zusagen wieder<br />verlässlich zu machen. Selbstreflexionsrunden bei Retrospektiven leiten Verbesserungen<br />ein, die im nächsten Planungszyklus bereits greifen.</p></div><p><img src="https://www.tomklein.de/wp-content/uploads/2024/04/Projekte-%E2%80%93-1.png" alt="Projekte" /></p></div><div id="tkn-t3" class="tabpanel" role="tabpanel"><div><h3>Coa<em>ching</em></h3><p>Reflexion im Coaching mit einem Manager macht persönliche Denk- und Verhaltensmuster<br />sichtbar und greifbar. Muster werden benannt. Erkenntnisse zu ihrer Herkunft und Bedeutung<br />für die Arbeit entstehen. Einige Muster lösen sich auf, und für andere werden<br />neue Sichtweisen und Verhaltensgewohnheiten beschlossen. Durch die Reflexion wächst die<br />Person in ihrer Rolle über bisherige Grenzen hinaus. Die Erkenntnisse gelten für<br />ihre Situation, in ihrer Organisation, und genau dort entfalten sie ihre Wirkung.</p></div><p><img src="https://www.tomklein.de/wp-content/uploads/2024/04/Coaching-%E2%80%93-1.png" alt="Coaching" /></p></div><div id="tkn-t4" class="tabpanel" role="tabpanel"><div><h3>Kul<em>tur</em></h3><p>Durch einen Sensemaking-Prozess werden Erfahrungen von Mitarbeitern erfasst. Anekdoten<br />über tägliches Erleben werden gesammelt. Geschichten werden reflektiert und Muster<br />im System, in der Führung, in der Kultur, die darin zum Ausdruck kommen,<br />herausgearbeitet. Interventionen zur Veränderung der Muster werden erarbeitet und in der<br />Organisation umgesetzt. Anekdoten werden laufend gesammelt, um die Wirkung der Interventionen<br />zu sehen und die Handlungen anzupassen.</p></div><p><img src="https://www.tomklein.de/wp-content/uploads/2024/04/Kultur-%E2%80%93-1.png" alt="Kultur" /></p></div><div id="tkn-t5" class="tabpanel" role="tabpanel"><div><h3>Manage<em>ment</em></h3><p>Das Management-Team nimmt sich regelmäßig Auszeiten vom operativen<br />Geschäft, um an der Firma und an der Zusammenarbeit im Management-Team strategisch zu<br />arbeiten. Über Feedbackrunden stimmen sie ihre Erwartungen ab und reflektieren ihre<br />Wirkung. Innovationsimpulse lassen den Blick über den Tellerrand schweifen.<br />Selbstreflexion lässt Chancen und Grenzen erkennen. Eine ständige Überprüfung<br />von Herausforderungen am Markt und in der Organisation stärkt den Wirklichkeitsbezug der<br />Management-Handlungen.</p></div><p><img src="https://www.tomklein.de/wp-content/uploads/2024/04/Management-%E2%80%93-1.png" alt="Management" /></p></div></div></section><section id="lagen" style="padding-top: 30px;"><div class="wrap"><p class="eyebrow">Ausgangslagen</p><h2>Wann Unternehmen mich <em>beauftragen.</em></h2><p class="intro">Meine Arbeit beginnt nicht mit einem Thema, sondern mit einer Lage. Vier, die<br />häufig vorkommen:</p><hr class="rule" /><div class="grid2"><div class="lage"><p><img src="https://www.tomklein.de/wp-content/uploads/2026/08/lage-01-zusammenlegung.webp" alt="Zwei zusammengefügte Taue" /></p><h3>Zwei Bereiche sind zusammengelegt. Die Zusammenarbeit ist es nicht.</h3><p>Auf dem Papier gibt es eine Organisation, in der Praxis zwei. Verantwortlichkeiten<br />überschneiden sich, Entscheidungen bleiben liegen, die Führungsmannschaft bindet<br />ihre Kraft in Abstimmung statt im Geschäft.</p></div><div class="lage"><p><img src="https://www.tomklein.de/wp-content/uploads/2026/08/lage-02-wachstum.webp" alt="Kleines Steuerrad auf großem Schiff" /></p><h3>Das Unternehmen ist schneller gewachsen als seine Steuerung.</h3><p>Was mit dreißig Leuten funktioniert hat, trägt mit dreihundert nicht mehr.<br />Prioritäten konkurrieren, Zusagen werden unzuverlässig, die Geschäftsführung<br />entscheidet Dinge, die längst delegiert sein müssten.</p></div><div class="lage"><p><img src="https://www.tomklein.de/wp-content/uploads/2026/08/lage-03-fuehrungsteam.webp" alt="Ruderachter von oben" /></p><h3>Ein neues Führungsteam muss handlungsfähig werden.</h3><p>Nach Wechseln an der Spitze steht eine Mannschaft zusammen, die noch keine gemeinsame<br />Arbeitsweise hat und unter Beobachtung sofort liefern soll.</p></div><div class="lage"><p><img src="https://www.tomklein.de/wp-content/uploads/2026/08/lage-04-transformation.webp" alt="Beschlossenes Konzept in der Werkstatt" /></p><h3>Die Transformation ist beschlossen und kommt nicht voran.</h3><p>Das Zielbild steht, die Präsentation ist gehalten, im Tagesgeschäft ändert<br />sich nichts.</p></div></div></div></section><section id="vorgehen" class="soft"><div class="wrap"><p class="eyebrow">Wie ich arbeite</p><h2>Der individuelle <em>Transformationsprozess.</em></h2><hr class="rule" /><div class="pane"><div class="ptext"><div class="num">01</div><h3>Ausgangssituation klären</h3><p>Ich erhebe, wie in Ihrem Haus tatsächlich entschieden wird: über Gespräche<br />mit den Beteiligten, Beobachtung der laufenden Gremienarbeit und Sichtung der vorhandenen<br />Steuerungsunterlagen. Das Ergebnis ist eine Standortbestimmung, über die sich streiten<br />lässt, weil sie konkret ist.</p></div><div class="pimg"><img class="pfoto" src="https://www.tomklein.de/wp-content/uploads/2026/08/prozess-01-ausgangssituation.webp" alt="Standortbestimmung: tatsächliche Entscheidungswege auf dem Organigramm" /></div></div><div class="pane rev"><div class="ptext"><div class="num">02</div><h3>Zielbild entwickeln</h3><p>Gemeinsam mit dem Führungskreis entsteht das Bild der künftigen Zusammenarbeit:<br />Rollen, Entscheidungsrechte, Gremien, Eskalationswege, in einer Form, die<br />entscheidungsfähig ist und nicht interpretationsbedürftig.</p></div><div class="pimg"><img class="pfoto" src="https://www.tomklein.de/wp-content/uploads/2026/08/prozess-02-zielbild.webp" alt="Zielbild entsteht über Entwurfsschichten" /></div></div><div class="pane"><div class="ptext"><div class="num">03</div><h3>Umsetzung begleiten</h3><p>Ich bleibe, bis die neue Ordnung im Tagesgeschäft trägt, und arbeite mit den<br />Verantwortlichen an den Stellen nach, an denen sie es nicht tut.</p></div><div class="pimg"><img class="pfoto" src="https://www.tomklein.de/wp-content/uploads/2026/08/prozess-03-umsetzung.webp" alt="Arbeitssitzung des Führungskreises mit Planungsboard" /></div></div><div class="pane rev"><div class="ptext"><div class="num">04</div><h3>Wirksamkeit prüfen</h3><p>Am Ende steht kein Konzeptpapier, sondern eine Organisation, die anders entscheidet als<br />vorher, überprüfbar an den Vorgängen, die vorher liegen geblieben sind.</p></div><div class="pimg"><img class="pfoto" src="https://www.tomklein.de/wp-content/uploads/2026/08/prozess-04-wirksamkeit.webp" alt="Lot an der Wand: Wirksamkeit prüfen" /></div></div></div></section><section id="coaching" class="dark"><div class="wrap split"><div><p class="eyebrow">Executive Coaching</p><p class="lead-quote">Führung auf oberer Ebene ist einsam. Es fehlt der Ort, an dem eine<br />Entscheidung durchdacht werden kann, <em>bevor sie fällt.</em></p><p style="margin-top: 28px;">In diesen Gesprächen bringe ich keine Inhalte mit: Ich stelle<br />Fragen, strukturiere die Reflexion und halte den Prozess offen, bis die Klärung<br />eingetreten ist. Die Antworten stammen aus der Situation meines Klienten und gelten für<br />diese Situation.</p><p><a class="btn invert" href="/executive-coaching/">Mehr zum Coaching</a></p></div><p><img src="https://www.tomklein.de/wp-content/uploads/2026/08/executive-coaching.webp" alt="Vertraulicher Gesprächsraum am Abend" /></p></div></section><section id="netzwerk"><div class="wrap split"><div><h2 class="plainh">Tom Klein &amp; Co.</h2><p>Kein Mensch ist allein erfolgreich. Wir sind ein Netzwerk aus erfahrenen<br />Meistern und jungen, hoch motivierten Kollegen, die seit Jahren zusammenarbeiten und<br />gemeinsam Transformations-Initiativen zum Erfolg führen.</p></div><p><img src="https://www.tomklein.de/wp-content/uploads/2024/01/Netzwerk.jpg" alt="Netzwerk" /></p></div></section><section id="ueber-mich" style="padding-top: 20px;"><div class="wrap split"><div><h2 class="plainh">Über Tom Klein</h2><p>Als Unternehmer, CEO, HR-Direktor, Geschäftsführer oder Inhaber<br />eines mittelständischen Unternehmens wissen Sie, dass die heutigen Herausforderungen in<br />der Geschäftswelt ungewöhnliche Lösungen verlangen, die manchmal auch den<br />Wechsel der gesamten Art, wie Sie erfolgreich sind, erfordern.</p><p>Bei Tom Klein begleiten wir genau solche Prozesse. Ich persönlich habe deutsche,<br />amerikanische und französische Unternehmen bisher in 40 Ländern dabei<br />unterstützt, Transformationsprozesse erfolgreich zu durchlaufen. Unsere Kollegen legen<br />weitere internationale Erfahrung in die Waagschale.</p><p style="font-weight: 400; margin-top: 22px;">Meine Expertise:</p><ul class="exp"><li>Den organisatorischen Rahmen für eine hoch motivierte Leistungskultur zu schaffen</li><li>Menschen und Teams dafür aufzustellen, ihre neue Rolle im Vorhaben zu übernehmen und auszufüllen</li><li>Die Steuerungsinstrumente einzuführen, die das jeweilige Vorhaben erfordert, und sie im Tagesgeschäft zu verankern</li><li>Die Grundlagen für eine anpassungsfähige Organisation zu schaffen, inklusive Aufbau der internen Kapazitäten</li></ul></div><p><img src="https://www.tomklein.de/wp-content/uploads/2024/01/Tom-%E2%80%93-1.jpg" alt="Tom Klein" /></p></div></section><section id="mandate" class="soft"><div class="wrap"><p class="eyebrow">Mandate</p><h2>Beratungsprojekte in der <em>Praxis.</em></h2><p class="intro">Ausgewählte Beratungsprojekte, anonymisiert: von der Lage über die<br />Analyse zum Ergebnis.</p><hr class="rule" /><div class="msplit"><div class="mandat"><h3>Zwei Geschäftsbereiche, eine Führung</h3><dl><dt>Ausgangssituation</dt><dd>Ein Industrieunternehmen hatte zwei Geschäftsbereiche zusammengelegt. Ein Jahr<br />später bestanden die alten Strukturen faktisch fort: Doppelzuständigkeiten,<br />konkurrierende Planungen, Entscheidungen wurden regelmäßig auf die<br />Geschäftsführung eskaliert.</dd><dt>Auftrag</dt><dd>Standortbestimmung und Erarbeitung eines Entscheidungs- und Rollenmodells für den<br />zusammengeführten Bereich, beauftragt durch die Geschäftsführung.</dd><dt>Vorgehen</dt><dd>Interviews mit den Führungskräften beider Herkunftsbereiche, Teilnahme an den<br />laufenden Leitungssitzungen über zwei Wochen, Rekonstruktion zurückliegender<br />Eskalationen. Auf dieser Grundlage Erarbeitung des Rollen- und Entscheidungsmodells mit dem<br />Leitungskreis, anschließend Begleitung der Einführung.</dd><dt>Ergebnis</dt><dd>Entscheidungen, die vorher regelmäßig eskaliert wurden, werden im Bereich<br />getroffen.</dd></dl></div><p><img style="width: 100%; height: auto; display: block;" src="https://www.tomklein.de/wp-content/uploads/2026/08/beratungsprojekte-projektwand.webp" alt="Anonymisierte Projektwand eines Beratungsmandats" /></p></div></div></section><section class="vital soft"><div class="wrap"><p class="eyebrow">Ein Aufruf an Entscheidungsträger</p><h2>Steigern Sie die Vitalität Ihrer <em>Organisation.</em></h2><hr class="rule" /><p>Es gibt Unternehmen, in denen man die Energie spürt, sobald man das Gebäude<br />betritt. Die Gespräche drehen sich um Kunden und Möglichkeiten, nicht um<br />Zuständigkeiten. Verantwortung wird genommen, bevor sie zugewiesen ist. Das ist keine<br />Utopie. Es ist erreichbar, und es ist die Folge von Entscheidungen, die Sie treffen<br />können.</p><p>Das Geheimnis liegt nicht darin, Menschen trotz der bestehenden Rahmenbedingungen zu<br />motivieren. Es liegt darin, die Rahmenbedingungen selbst zu verändern: weg von einer<br />Kultur, die zuerst absichert, hin zu einer Kultur, die zuerst ermöglicht. Und die hohe<br />Dynamik verkraftet, ohne die Steuerung zu verlieren.</p><p>Der Anfang ist einfacher, als er scheint: Räumen Sie die Hindernisse beiseite, die<br />Motivation und Verantwortung im Weg stehen. Aber unterschätzen Sie den Weg nicht. Schon<br />kleine Schritte fordern die bestehende Führungskultur heraus, und hohe Dynamik zu halten,<br />ohne die Kontrolle zu verlieren, ist eine Kunst, die bislang wenige Unternehmen beherrschen.</p><p><span class="lead-quote">Die entscheidende Frage ist nicht, welche Probleme gelöst werden<br />müssen. Die entscheidende Frage ist, was Ihrer Organisation im Weg steht.</span></p><p>Wenn Sie bereit sind, den nächsten Schritt zu gehen: Lassen Sie uns über Ihre<br />Organisation sprechen. Über das, was sie zurückhält, und über das, was in<br />ihr steckt. Eine Transformation, die dort ansetzt, verändert nicht nur Strukturen. Sie<br />gibt Menschen ihre Leidenschaft und ihre Verantwortung zurück.</p></div></section><section id="stimmen"><div class="wrap"><h2 class="plainh" style="text-align: center;">Was Kunden über die Zusammenarbeit sagen</h2><hr class="rule" /><div id="tkn-slider" class="slider"><div class="slide on"><blockquote><p>„Indem er Perspektive und nicht nur Rat liefert, ermöglicht er mir<br />kontinuierliche Selbstreflektion, immer passend zu meiner jeweiligen Situation. Mit seiner<br />unnachahmlichen Persönlichkeit regt er stets an, sich auf das Individuum und die<br />besonderen Umstände zu fokussieren, statt auf Tools und Methoden. Ein wirklich<br />einzigartiger Coach!“</p></blockquote><div class="stars" aria-hidden="true">★★★★★</div><div class="name">Hansjörg HerrmannKOSTAL</div></div><div class="slide"><blockquote><p>„Tom Klein hat mich über 15 Jahre in verschiedenen beruflichen<br />Stationen und Situationen persönlich und mit meinen Führungsteams begleitet und<br />war in all dieser Zeit für mich ein verlässlicher Sparringspartner, wertvoller<br />Ideengeber, vor allem jedoch vertrauensvoller Zuhörer und Resonanzboden für meine<br />Themen.“</p></blockquote><div class="stars" aria-hidden="true">★★★★★</div><div class="name">Thorsten SeeharsCEO Grammer AG</div></div><div class="slide"><blockquote><p>„Seit über einem Jahrzehnt arbeite ich mit Tom zusammen, und ich<br />kann mit Überzeugung sagen, dass diese Zusammenarbeit eine der wertvollsten<br />Investitionen in meine berufliche und persönliche Entwicklung war. Tom besitzt ein<br />unvergleichliches Talent dafür, maßgeschneiderte Strategien zu entwickeln, die<br />perfekt auf meine individuellen Bedürfnisse abgestimmt sind.“</p></blockquote><div class="stars" aria-hidden="true">★★★★★</div><div class="name">Silke Weiser-WaltherCOO und Managing Partner, Quoniam Asset Management GmbH</div></div><div class="dots"> </div></div></div></section><section id="kunden" style="padding-top: 20px;"><div class="wrap"><h2 class="plainh">Mit wem ich bereits zusammenarbeiten durfte</h2><hr class="rule" /><div class="kunden"><p>Baerlocher</p><p>BASF</p><p>BBraun</p><p>Blanco</p><p>Babbel</p><p>BMW</p><p>BorgWarner</p><p>Branding Science</p><p>BDR Thermea</p><p>Continental</p><p>Credit Suisse</p><p>Daimler</p><p>DQS</p><p>Danfoss</p><p>Deka Bank</p><p>DZ Bank</p><p>Eberspächer</p><p>Fuchs</p><p>Fellowmind</p><p>hessischer Rundfunk</p><p>Hyperbole TV</p><p>hinderer+mühlich</p><p>ID-Ware</p><p>Knorr Bremse</p><p>Kostal</p><p>KSB</p><p>Krebs&amp;Riedel</p><p>Kroll Discovery</p><p>Lanxess</p><p>L-Mobile</p><p>Mann+Hummel</p><p>Markem-Imaje</p><p>Max-Planck-Gesellschaft</p><p>ResponsAbility</p><p>Roland Berger</p><p>Sopra Steria</p><p>Sparda Consult</p><p>Synthesa</p><p>Schöpflin Stiftung</p><p>Tehalit</p><p>Union Investment</p><p>Vaillant</p><p>Vesta</p><p>Weber Hydraulik</p><p>Zotz-Klimas</p></div></div></section><section id="abgrenzung" class="soft"><div class="wrap"><span class="label">Was ich nicht anbiete</span><p>Ich gebe keine offenen Seminare, keine Kurse mit festem Curriculum und keine<br />Zertifizierungen. Es gibt keine Lehrgangsunterlagen und keine Prüfungen.</p><p>Meine Arbeit findet ausschließlich im Auftrag eines Unternehmens statt, an dessen<br />konkreter Situation, und ihr Inhalt ergibt sich aus dieser Situation.</p></div></section><section id="kontakt"><div class="wrap"><h2 class="plainh">Jetzt Erstgespräch vereinbaren</h2><p style="max-width: 720px;">Vereinbaren Sie ein unverbindliches Erstgespräch, in dem wir die<br />Möglichkeit haben, uns kennenzulernen und näher auf Ihren Bedarf einzugehen. Auf Ihre<br />Anfrage folgt das Gespräch, danach ein schriftliches Angebot. Ich melde mich innerhalb von<br />zwei Arbeitstagen.</p><p><a class="qbtn" href="#kontaktformular">Termin vereinbaren <span class="arr">→</span></a></p><hr id="kontaktformular" class="rule" /><h3 class="plainh" style="font-size: 24px;">Kontakt aufnehmen</h3><div class="cf7wrap">[contact-form-7 id="3145" title="Kontaktformular"]</div></div></section><section id="socials" class="soft"><div class="wrap"><h2 class="plainh">Meine Social-Media Kanäle</h2><hr class="rule" /><div class="soc"><div><a class="img" href="https://podcasts.apple.com/de/podcast/living-transformation-create-the-future-stay-human/id1523820747"><img src="https://www.tomklein.de/wp-content/uploads/2024/03/Apple.png" alt="Podcast auf Apple" /></a><h3>Apple | Tom Klein</h3><p>Lassen Sie sich den Tom Klein Podcast auf Apple nicht entgehen.</p><p><a class="qbtn" href="https://podcasts.apple.com/de/podcast/living-transformation-create-the-future-stay-human/id1523820747">Anhören <span class="arr">→</span></a></p></div><div><a class="img" href="https://open.spotify.com/show/7Kp4ewmtoIVNNZtvTNYR2j"><img src="https://www.tomklein.de/wp-content/uploads/2024/03/Spotify-2.png" alt="Podcast auf Spotify" /></a><h3>Spotify | Tom Klein</h3><p>Der Tom Klein Podcast, jetzt auf Spotify erhältlich.</p><p><a class="qbtn" href="https://open.spotify.com/show/7Kp4ewmtoIVNNZtvTNYR2j">Anhören <span class="arr">→</span></a></p></div><div><a class="img" href="https://www.youtube.com/@tomkleinTV"><img src="https://www.tomklein.de/wp-content/uploads/2026/08/youtube-kachel-1270x890-1.png" alt="YouTube-Kanal" /></a><h3>YouTube | Tom Klein</h3><p>Impulse zu Transformation &amp; Wandel.</p><p><a class="qbtn" href="https://www.youtube.com/@tomkleinTV">Ansehen <span class="arr">→</span></a></p></div></div></div></section></div><p><script>
+(function(){
+  var tabs=document.querySelectorAll('.tkn .tabbar button');
+  tabs.forEach(function(btn){
+    btn.addEventListener('click',function(){
+      tabs.forEach(function(b){b.setAttribute('aria-selected','false')});
+      document.querySelectorAll('.tkn .tabpanel').forEach(function(p){p.classList.remove('active')});
+      btn.setAttribute('aria-selected','true');
+      document.getElementById(btn.getAttribute('aria-controls')).classList.add('active');
+    });
+  });
+  var box=document.getElementById('tkn-slider');
+  if(box){
+    var slides=box.querySelectorAll('.slide'),dots=box.querySelector('.dots'),cur=0;
+    slides.forEach(function(_,k){
+      var d=document.createElement('button');d.className='dot'+(k===0?' on':'');
+      d.setAttribute('aria-label','Zitat '+(k+1));
+      d.addEventListener('click',function(){show(k)});dots.appendChild(d);
+    });
+    function show(k){
+      cur=(k+slides.length)%slides.length;
+      slides.forEach(function(s,x){s.classList.toggle('on',x===cur)});
+      dots.querySelectorAll('.dot').forEach(function(d,x){d.classList.toggle('on',x===cur)});
+    }
+    box.querySelector('.prev').addEventListener('click',function(){show(cur-1)});
+    box.querySelector('.next').addEventListener('click',function(){show(cur+1)});
+  }
+})();
+</script></p>
