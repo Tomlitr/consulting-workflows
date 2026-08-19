@@ -89,3 +89,28 @@ level, I work as a sparring partner in decision-making and reflection processes.
 `testimonials-cpt.json` (IDs/Daten/Sprachen) · `front-text.txt`/`home-en-text.txt`
 (Live-Textextrakte 18.08.) · `export-20260818.xml.gz` (kompletter WXR-Export,
 Quelle für alles Weitere).
+
+## Update 19.08. vormittags — Batch-A-Fixes + Batch B ausgeführt
+
+**Batch-A-Nacharbeit (Toms Screenshots):** (1) Hero-Overlay saß oben und lief in
+Header/Nav — jetzt in linker Textbox (58 % Breite), vertikal zentriert, Padding
+gegen den transparenten Header. (2) Vitalitäts-Sektion war „leer": geklonter
+Textstil trug eine globale Farbreferenz (weiß auf dunklen Sektionen) → weiß auf
+weiß. Fix: globale Farbrefs in allen neuen Widgets entfernt, explizite Farben
+(#1F2A2D Fließtext, #5A6B6E Eyebrow hell, #9FC3CC Eyebrow dunkel, #FFFFFF auf
+dunkel). Per generierter CSS-Datei verifiziert.
+
+**Batch B (25/25 verifiziert):** Neue Sektion „Wann Unternehmen mich beauftragen."
+(Ausgangslagen, 4 Blöcke) · Prozess-Sektion: Showcase trägt jetzt die 4 Schritte
+(01–04) inkl. geretteter Zeile in Schritt 4; die beiden Essay-Accordions aus der
+Sektion entfernt · neue dunkle Executive-Coaching-Sektion (Gradient wie
+Tom-Klein-&-Co.; Button „Kontaktieren" → #kontakt, da /executive-coaching/ noch
+Entwurf ist — später auf „Mehr zum Coaching" umstellbar) · Vitalität-2 als eigene
+dunkle Sektion mit neuem Text (Accordion-Komponente erhalten) · Reihenfolge auf
+Neufassung: Hero → Vitalität → Einstiege/Tabs → Wann → Prozess → Exec → TK&Co →
+Über → [Mandate folgt] → Vitalität2 → Testimonials → Kundenliste → [Was-ich-nicht
+folgt] → Kontakt → Social. Payload: `elementor/de-batchB.json` (20 Top-Sektionen).
+
+**Offen → Batch C:** Mandate-Sektion (blob 09) · „Was ich nicht anbiete" (blob 13)
+· Testimonial-Reihenfolge/Waldhier-Parken/Seehars-Umbrüche · Snippet-Reste purgen
+(Zeilen 16/17 inaktiv) + ccr_*-Options löschen · danach EN nativ + Go-Live.
