@@ -114,3 +114,33 @@ folgt] → Kontakt → Social. Payload: `elementor/de-batchB.json` (20 Top-Sekti
 **Offen → Batch C:** Mandate-Sektion (blob 09) · „Was ich nicht anbiete" (blob 13)
 · Testimonial-Reihenfolge/Waldhier-Parken/Seehars-Umbrüche · Snippet-Reste purgen
 (Zeilen 16/17 inaktiv) + ccr_*-Options löschen · danach EN nativ + Go-Live.
+
+## Update 19.08. nachmittags — Batch C komplett, DE-Seite inhaltlich fertig
+
+Auf Toms Feedback: **Einstiege/Tabs-Sektion ersatzlos gelöscht** (Anker
+`#leistungen` auf die Wann-Sektion umgezogen; doppelter `#netzwerk`-Anker der
+Exec-Sektion entfernt) · **Wann-Sektion als 2×2-Grid mit den vier
+Neufassungs-Icons** (lage-01…04.webp) · **„Der individuelle
+Transformationsprozess" ersatzlos gelöscht** (⚠️ damit ist die gerettete Zeile
+„Am Ende sagen alle…" wieder heimatlos — Entscheidung offen) · **Executive
+Coaching zweispaltig** mit executive-coaching.webp (Bild rechts, abgerundet).
+
+**Batch C:** Mandate-Sektion („Beratungsprojekte in der Praxis.", Fall „Zwei
+Geschäftsbereiche, eine Führung" mit Ausgangssituation/Auftrag/Vorgehen/Ergebnis)
+· „Was ich nicht anbiete." (heller Grauton #F4F6F6) · **Testimonials: Herrmann →
+Seehars → Weiser-Walther per Datum, Waldhier 5740 auf draft — wirkt auch auf der
+LIVE-Seite (gewollt, DRV-Gewinn)** · Seehars-Zitat (5744, Feld
+`qodef_testimonials_text`) ohne harte Umbrüche neu gesetzt.
+
+**Aufräumen erledigt:** alle [Claude]-Snippets aus der Tabelle gepurgt (nur die
+5 Original-Snippets übrig), alle ccr_*-Options gelöscht.
+
+**Payload-Kette:** de-fixed → de-batchA → de-batchB → de-batchC → **de-batchC2
+(= aktueller Stand 9856, 19 Top-Sektionen)**. Rollback weiterhin de-live.json.
+
+**Nächste Phase (von Tom angekündigt):** Navigation — „Beratung" und „Executive
+Coaching" als Unterpunkte unter „Leistungen"; Voraussetzung: Entwürfe 9795
+(/beratung/) und 9738 (/executive-coaching/) DRV-prüfen, fertigstellen,
+publizieren; Menüpunkte danach per REST (wp/v2/menu-items, Parent DE 5892
+„Leistungen" / EN 7892 „Services"). Außerdem offen: EN nativ · Go-Live DE ·
+Yoast-Titel Live-Seite · Search Console · „© 2025"-Quelle.
