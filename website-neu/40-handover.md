@@ -144,3 +144,27 @@ Coaching" als Unterpunkte unter „Leistungen"; Voraussetzung: Entwürfe 9795
 publizieren; Menüpunkte danach per REST (wp/v2/menu-items, Parent DE 5892
 „Leistungen" / EN 7892 „Services"). Außerdem offen: EN nativ · Go-Live DE ·
 Yoast-Titel Live-Seite · Search Console · „© 2025"-Quelle.
+
+## Update 19.08. abends — Batch D: Neufassungs-Optik übernommen
+
+Design-Tokens aus dem Neufassungs-CSS extrahiert und angewandt: **Playfair Display
+italic** als Akzentschrift (Serif-em in H2s, Step-Nummern 52px #64A6AF,
+Exec-Headline weiß italic), **Eyebrows vereinheitlicht** (Poppins 700/12px,
+Letter-Spacing 5px; #1B5F71 hell / #64A6AF dunkel), **Outline-Buttons**
+(uppercase, 1px Rahmen).
+
+Umgesetzt: **„Der individuelle Transformationsprozess." neu** als helle Sektion
+(#F8F9F9) nach „Wann…": Eyebrow WIE ICH ARBEITE, H2 mit Serif-em, vier Zeilen
+01–04 (Nummer + H3 + Fließtext links, Bild rechts; prozess-01…04.webp) ·
+**Exec-Sektion restylt**: komplette Doppelsatz-Headline in Playfair italic weiß,
+Fließtext ohne Umbrüche, Button „Mehr zum Coaching" (Outline weiß, vorerst
+→ #kontakt, bis /executive-coaching/ live ist; in Batch B war nie ein Button
+angelegt — jetzt vorhanden) · **Gerettete Zeile** im Mandate-Ergebnis: „…werden im
+Bereich getroffen. Am Ende sagen alle: Wir haben es selbst gemeistert."
+
+Verifiziert 11/11 im Render; Helper gepurgt. Payload-Kette endet jetzt bei
+**de-batchD.json (= Stand 9856, 20 Top-Sektionen)**.
+
+Offen: Toms Sichtprüfung Batch D · Tiefen-Seiten /beratung/ + /executive-coaching/
+(DRV-Check, fertigstellen, publizieren) · Nav-Unterpunkte unter „Leistungen" ·
+EN nativ · Go-Live DE.
