@@ -55,3 +55,17 @@ Poppins 700/12px/LS 5px · Fließtext Poppins 300/17px · Outline-Buttons upperc
 **`de-batchF.json` = aktueller Stand 9856**. Quellen: `neufassung-blob-v3.html`
 (gerenderte Neufassung = maßgeblich), export-20260818.xml.gz, testimonials-cpt.json,
 footer-de/en.json, en-live.json (EN-Rollback). Übrige Dateien wie beschriftet.
+
+## Nachtrag 19.08. — Zweitseite „tomsreflections" (alter Blog)
+
+Tom bat um DRV-Prüfung seines alten WordPress-Blogs „tomsreflections". Befund
+dieser Session: unter keiner Adresse mit diesem Namen erreichbar/existent (kein DNS
+für tomsreflections.de/.com/.blog, kein WP.com-Slug). Einzige Spur:
+**`tomklein.wordpress.com` existiert und ist PRIVAT** (WP.com-API: „unauthorized")
+— sehr wahrscheinlich der gemeinte Blog (Titel vermutlich „Tom's Reflections").
+Tom hat den **WordPress.com-Connector aktiviert**; er wird erst in einer neuen
+Session geladen. Nächste Session: Connector nutzen → Site-Liste → Beiträge/Seiten
+lesen → Lexikon-Scan. Alternativ: Export-XML aus dem WP.com-Dashboard.
+**DRV-Einordnung vorab:** privat = keine Außendarstellung = kein Prüfungsrisiko;
+Empfehlung unabhängig vom Inhalt: privat lassen oder löschen; nur bei
+Veröffentlichung Textprüfung nötig.
